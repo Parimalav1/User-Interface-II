@@ -13,7 +13,7 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
-	font-size: 100%;
+	font-size: 62.5%;
 	font: inherit;
 	vertical-align: baseline;
 }
@@ -125,7 +125,11 @@ h2 {
   justify-content: space-between;
 }
 
-#container3 div {
+#container3 #img {
+  width: 50%;
+}
+
+#container3 #text {
   width: 50%;
 }
 
@@ -176,4 +180,113 @@ button{
   color: #B22222;
   padding: 2% 0;
   border: 2px solid black;
+}
+
+@media(max-width: 800px) {
+	body {
+	  background-color: #AFEEEE;
+	}
+		#container2 div h1 {
+		  color: #F5F5F5;
+		  font-size: 4rem;
+	}
+	 #container2 h2 {
+	  color: #FFD700;
+	  font-size: 3rem;
+  }
+	 #container4 #me h3 {
+	  color: #FF4500;
+	  font-size: 2rem;
+  }
+	#container4 #me p {
+		color: #2F4F4F;
+	  font-size: 1.6rem;
+	}
+	#container3 {
+	  width: 100%;
+	  display:flex;
+	  justify-content: space-evenly;
+	}
+
+	#container3 #img {
+	  width: 60%;
+	}
+
+	#container3 #text {
+	  width: 40%;
+	}
+	/*#container4 {
+	  display:flex;
+	  justify-content: flex-end;
+	}*/
+
+	#container4 #pics {
+	  width: 60%;
+	  display:flex;
+	  justify-content: space-between;
+	}
+
+	#container4 #me {
+	  width: 30%;
+	  display:flex;
+	  flex-wrap: wrap;
+	}
+}
+
+@media(max-width: 500px) {
+	body {
+	  background-color: #FFA500;
+	}
+		#container2 div h1 {
+		  color: #F5F5F5;
+		  font-size: 2.5rem;
+	}
+	 #container2 h2 {
+	  color: #FFD700;
+	  font-size: 3rem;
+  }
+	 #container4 #me h3 {
+	  color: #FF4500;
+	  font-size: 2rem;
+  }
+	#container4 #me p {
+		color: #2F4F4F;
+	  font-size: 1.6rem;
+	}
+	#container3 {
+	  width: 100%;
+	  display:flex;
+	  justify-content: center;
+	}
+
+	#container3 #img {
+	  width: 40%;
+
+	}
+
+	#container3 #text {
+	  width: 30%;
+		padding-left: 20px;
+	}
+	/*#container4 {
+	  display:flex;
+	  justify-content: flex-end;
+	}*/
+	#container4 {
+	  width: 100%;
+	  display:flex;
+	  justify-content: center;
+	}
+
+	#container4 #pics {
+	  width: 40%;
+	  display:flex;
+	  flex-wrap: wrap;
+	}
+
+	#container4 #me {
+	  width: 30%;
+	  display:flex;
+	  flex-wrap: wrap;
+	}
 }
